@@ -2,44 +2,50 @@
 
 namespace Tests;
 
-use App\MergeSort;
+use App\Sorts\QuickSort;
 use PHPUnit\Framework\TestCase;
 
-class MergeSortTest extends TestCase {
-    public function testSort() {
-        $sorter = new MergeSort();
+class QuickSortTest extends TestCase
+{
+    public function testSort()
+    {
+        $sorter = new QuickSort();
 
         $array = [5, 3, 7, 1, 9, 2, 4, 6, 8];
 
         $this->assertEquals([1, 2, 3, 4, 5, 6, 7, 8, 9], $sorter->sort($array));
     }
 
-    public function testSortWithOneElement() {
-        $sorter = new MergeSort();
+    public function testSortWithOneElement()
+    {
+        $sorter = new QuickSort();
 
         $array = [5];
 
         $this->assertEquals([5], $sorter->sort($array));
     }
 
-    public function testSortWithTwoElements() {
-        $sorter = new MergeSort();
+    public function testSortWithTwoElements()
+    {
+        $sorter = new QuickSort();
 
         $array = [5, 3];
 
         $this->assertEquals([3, 5], $sorter->sort($array));
     }
 
-    public function testSortWithThreeElements() {
-        $sorter = new MergeSort();
+    public function testSortWithThreeElements()
+    {
+        $sorter = new QuickSort();
 
         $array = [5, 3, 7];
 
         $this->assertEquals([3, 5, 7], $sorter->sort($array));
     }
 
-    public function testSortWithEmptyArray() {
-        $sorter = new MergeSort();
+    public function testSortWithEmptyArray()
+    {
+        $sorter = new QuickSort();
 
         $array = [];
 

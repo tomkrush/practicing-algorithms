@@ -2,12 +2,12 @@
 
 namespace Tests;
 
-use App\BubbleSort;
+use App\Sorts\MergeSort;
 use PHPUnit\Framework\TestCase;
 
-class BubbleSortTest extends TestCase {
+class MergeSortTest extends TestCase {
     public function testSort() {
-        $sorter = new BubbleSort();
+        $sorter = new MergeSort();
 
         $array = [5, 3, 7, 1, 9, 2, 4, 6, 8];
 
@@ -15,7 +15,7 @@ class BubbleSortTest extends TestCase {
     }
 
     public function testSortWithOneElement() {
-        $sorter = new BubbleSort();
+        $sorter = new MergeSort();
 
         $array = [5];
 
@@ -23,7 +23,7 @@ class BubbleSortTest extends TestCase {
     }
 
     public function testSortWithTwoElements() {
-        $sorter = new BubbleSort();
+        $sorter = new MergeSort();
 
         $array = [5, 3];
 
@@ -31,7 +31,7 @@ class BubbleSortTest extends TestCase {
     }
 
     public function testSortWithThreeElements() {
-        $sorter = new BubbleSort();
+        $sorter = new MergeSort();
 
         $array = [5, 3, 7];
 
@@ -39,7 +39,7 @@ class BubbleSortTest extends TestCase {
     }
 
     public function testSortWithEmptyArray() {
-        $sorter = new BubbleSort();
+        $sorter = new MergeSort();
 
         $array = [];
 

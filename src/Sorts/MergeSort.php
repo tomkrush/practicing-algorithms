@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Sorts;
 
 class MergeSort {
     public function sort($array) {
